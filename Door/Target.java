@@ -32,7 +32,7 @@ public class Target
         Ellipse2D.Double circle5 = new Ellipse2D.Double(xCenter - 62.5, yCenter - 62.5, 125, 125);
         
         Color color1 = new Color(176, 23, 31);
-        color1.createContext(
+        color1.createContext();
         circle1.setPaint(color1);
         
         g2.draw(circle1);

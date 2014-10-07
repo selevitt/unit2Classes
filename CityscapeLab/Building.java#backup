@@ -14,15 +14,15 @@ import java.awt.Color;
 public class Building
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private double xTopLeft;
-    private double yTopLeft;
-    private double screenWidth;
-    private double screenHeight;
+    private int xTopLeft;
+    private int yTopLeft;
+    private int screenWidth;
+    private int screenHeight;
 
     /**
      * Default constructor for objects of class Class1
      */
-    public Building(double x, double y, double width, double height)
+    public Building(int x, int y, int width, int height)
     {
         screenWidth = width;
         screenHeight = height;
