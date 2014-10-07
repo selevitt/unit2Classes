@@ -22,20 +22,20 @@ public class CityscapeComponent extends JComponent
      * @param    y    description of parameter y
      * @return    description of the return value
      */
-    static final double BUILDING_WIDTH = 1/9;
-    static final double BUILDING_HEIGHT = 5/8;
-    static final double TOP_LEFT_HEIGHT = 1/8;
+    static final double BUILDING_WIDTH = 1.0/9;
+    static final double BUILDING_HEIGHT = 5.0/8;
+    static final double TOP_LEFT_HEIGHT = 1.0/8;
     
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
         
-        double width = getWidth();
-        double height = getHeight();
+        int width = getWidth();
+        int height = getHeight();
         
-        double bWidth = width * BUILDING_WIDTH;
-        double bLeft = height * TOP_LEFT_HEIGHT;
-        double bHeight = height * BUILDING_HEIGHT;
+        int bWidth = (int)(width * BUILDING_WIDTH);
+        int bLeft = (int)(height * TOP_LEFT_HEIGHT);
+        int bHeight = (int)(height * BUILDING_HEIGHT);
         
         Building build1 = new Building(bWidth , bLeft, bWidth, bHeight);
         Building build2 = new Building(3 * bWidth , bLeft, bWidth, bHeight);
@@ -55,13 +55,13 @@ public class CityscapeComponent extends JComponent
         build3.draw(g2);
         build4.draw(g2);
         
-        road1.draw(g2);
+        //road1.draw(g2);
         
-        car1.draw(g2);
-        car2.draw(g2);
-        car3.draw(g2);
-        car4.draw(g2);
-        car5.draw(g2);
+        //car1.draw(g2);
+        //car2.draw(g2);
+        //car3.draw(g2);
+        //car4.draw(g2);
+        //car5.draw(g2);
         
     }
 
