@@ -64,6 +64,17 @@ public class Building
         Rectangle w10 = new Rectangle( xTopLeft + (3 * winWidth), yTopLeft + (9 * winHeight), winWidth, winHeight);
         
         Rectangle d1 = new Rectangle(xTopLeft + winWidth, yTopLeft + (11 * winHeight), (winWidth * 3), (winHeight * 2));
+        
+        Point2D p1 = new Point2D.Double(xTopLeft + winWidth + (winWidth * 3.0 / 2) , yTopLeft + (11 * winHeight));
+        Point2D p2 = new Point2D.Double(xTopLeft + winWidth + (winWidth * 3.0 / 2) , yTopLeft + (11 * winHeight) + winHeight * 2);
+        Line2D l1 = new Line2D.Double(p1 , p2);
+        
+        double p3 = (xTopLeft + winWidth + (winWidth * 3.0 / 2) - (winWidth * 3.0 / 10));
+        double p4 = (yTopLeft + (11 * winHeight) + winHeight);
+        // double p5 = 
+        
+        // Ellipse2D knob1 = new Ellipse2D.Double( p3, p4, p5, p5);
+        
         g2.setColor(Color.BLACK);
         
         g2.draw(r1);
@@ -80,6 +91,9 @@ public class Building
         g2.draw(w10);
         
         g2.draw(d1);
+        
+        g2.draw(l1);
+        // g2.draw(knob1);
     }
 
 }
