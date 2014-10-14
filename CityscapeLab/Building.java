@@ -71,13 +71,22 @@ public class Building
         
         double p3 = (xTopLeft + winWidth + (winWidth * 3.0 / 2) - (winWidth * 3.0 / 10));
         double p4 = (yTopLeft + (11 * winHeight) + winHeight);
-        // double p5 = 
+        double p5 = (winWidth * 3.0 / 15);
         
-        // Ellipse2D knob1 = new Ellipse2D.Double( p3, p4, p5, p5);
+        Ellipse2D knob1 = new Ellipse2D.Double( p3, p4, p5, p5);
+        
+        double p6 = (xTopLeft + winWidth + (winWidth * 3.0 / 2) + (winWidth * 3.0 / 30));
+        
+        Ellipse2D knob2 = new Ellipse2D.Double( p6, p4, p5, p5);
         
         g2.setColor(Color.BLACK);
         
         g2.draw(r1);
+        
+        g2.setColor(Color.GRAY);
+        g2.fill(r1);
+        
+        g2.setColor(Color.BLACK);
         
         g2.draw(w1);
         g2.draw(w2);
@@ -93,7 +102,35 @@ public class Building
         g2.draw(d1);
         
         g2.draw(l1);
-        // g2.draw(knob1);
+        
+        g2.draw(knob1);
+        g2.draw(knob2);
+        
+        g2.fill(knob1);
+        g2.fill(knob2);
+        
+        g2.setColor(Color.YELLOW);
+        
+        g2.fill(w1);
+        g2.fill(w2);
+        g2.fill(w3);
+        g2.fill(w4);
+        g2.fill(w5);
+        g2.fill(w6);
+        g2.fill(w7);
+        g2.fill(w8);
+        g2.fill(w9);
+        g2.fill(w10);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
 }
