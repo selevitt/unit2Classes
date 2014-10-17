@@ -7,21 +7,25 @@ import java.awt.geom.Ellipse2D;
 
 
 /**
- * Write a description of class Class2 here.
+ * This class creates a road that extends the width of the screen. Also it stays 1/4 of the screen height.
  * 
  * @Seth (your name) 
  * @10/7/14 (a version number or a date)
  */
 public class Road
 {
-    /** description of instance variable x (add comment for each instance variable) */
+    /** This variable is used to determine the x value of the top left corner of the Road*/
     private int xTopLeft;
+    /** This variable is used to determine the y value of the top left corner of the Road*/
     private int yTopLeft;
+    /** This variable determines the width of the Road */
     private int screenWidth;
+    /**  This variable determines the height of the Road*/
     private int screenHeight;
 
     /**
-     * Default constructor for objects of class Class2
+     * This is the constructor for the Road class and takes the input of integers. They determine the width, height, Top Left X Coordinate, and Top Left Y Coordinate
+     * @param - x, y, width, height
      */
     public Road(int x, int y, int width, int height)
     {
@@ -32,7 +36,8 @@ public class Road
     }
 
     /**
-     * 
+     * This method draws the Road class by establishing the values of the road and other components of it.
+     * @param - g2
      */
     public void draw(Graphics2D g2)
     {

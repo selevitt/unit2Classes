@@ -8,21 +8,14 @@ import java.awt.Color;
  * Class that creates instances of the classes that comprise the cityscape and delegates drawing the
  *  cityscape to these object.
  * 
- * @author @gcschmit
- * @version 18 July 2014
+ * @author Seth Levitt
+ * @version 17 October 2014
  */
 public class CityscapeComponent extends JComponent
 {
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * The method that establishes which objects will draw and where thaey are.
+     * @param  - g
      */
     static final double BUILDING_WIDTH = 1.0/9;
     static final double BUILDING_HEIGHT = 5.0/8;
