@@ -5,10 +5,9 @@ import java.awt.geom.Point2D;
 import java.awt.Color;
 import java.awt.geom.Ellipse2D;
 
-
-
 /**
- * Write a description of class Class1 here.
+ * This class creates a building with two columns and four rows of windows that are proportionally to the building no matter what size the building is. It draws th building based on the input of
+ * the x and y coordinates as well as the width and height.
  * 
  * @Seth (your name) 
  * @10/3/14 (a version number or a date)
@@ -17,14 +16,17 @@ public class Building
 {
     /** description of instance variable x (add comment for each instance variable) */
     private int xTopLeft;
+    /** description of instance variable x (add comment for each instance variable) */
     private int yTopLeft;
+    /** description of instance variable x (add comment for each instance variable) */
     private int screenWidth;
+    /** description of instance variable x (add comment for each instance variable) */
     private int screenHeight;
     
     static final double WINDOW_RATIO_WIDTH = 1.0/5;
     static final double WINDOW_RATIO_HEIGHT = 1.0/13;
     /**
-     * Default constructor for objects of class Class1
+     * Default constructor for objects of class Building
      */
     public Building(int x, int y, int width, int height)
     {
@@ -121,15 +123,6 @@ public class Building
         g2.fill(w8);
         g2.fill(w9);
         g2.fill(w10);
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
     }
 
