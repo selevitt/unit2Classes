@@ -6,22 +6,25 @@ import java.awt.Color;
 import java.awt.geom.Ellipse2D;
 
 /**
- * Write a description of class Class3 here.
+ * The Sun class draws a sun in the upper right corner that stays proportional to the scren size while stile staying a circle.
  * 
  * @Seth (your name) 
  * @10/11/14 (a version number or a date)
  */
 public class Sun
 {
-    /** description of instance variable x (add comment for each instance variable) */
+    /** The upper left x value of the rectangle the circle is in. */
     private int xTopLeft;
+    /** The upper left y value of the rectangle the circle is in. */
     private int yTopLeft;
+    /** The radius of the ellipse. */
     private int screenWidth;
+    /** The radius of the ellipse. */
     private int screenHeight;
  
 
     /**
-     * Default constructor for objects of class Sun
+     * The constructor of the Sun Class. Establishes the x, y, width, and height of the ellipse.
      */
     public Sun(int x, int y, int width, int height)
     {
@@ -32,15 +35,9 @@ public class Sun
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * This draws the sun that is created based on the input given by the instance variables.
+
+     * @param   g- the graphic variable
      */
     public void draw(Graphics2D g2)
     {

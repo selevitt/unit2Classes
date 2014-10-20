@@ -26,7 +26,7 @@ public class Building
     static final double WINDOW_RATIO_WIDTH = 1.0/5;
     static final double WINDOW_RATIO_HEIGHT = 1.0/13;
     /**
-     * Default constructor for objects of class Building
+     * The constructor for the Building class. Establishes all the values that will be used to draw the building based on the screen size.
      */
     public Building(int x, int y, int width, int height)
     {
@@ -37,15 +37,9 @@ public class Building
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * Draws the Windows and outline of the building as well as the door. This is all based off being proportional to the screen size.
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @param    g2      this is the graphics variable that draws the building and all of its components.
      */
     public void draw(Graphics2D g2)
     {
